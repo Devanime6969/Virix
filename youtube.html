@@ -38,4 +38,186 @@
         <!-- Same footer as in index.html -->
     </footer>
 </body>
+        <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: #2b2b2b;
+    background-size: cover;
+    background-position: center;
+}
+
+header .header-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin: 0 0 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn, .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: #aaff00;
+    color: #333;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #aaff00;
+    border: 2px solid #aaff00;
+}
+
+.features {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    background-color: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+        display: block;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .btn, .btn-secondary {
+        font-size: 0.875rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature h3 {
+        font-size: 1.25rem;
+    }
+}
+
+    </style>
+    <script>
+        function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+        
+    </script>
 </html>
